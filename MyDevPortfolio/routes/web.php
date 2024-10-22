@@ -6,6 +6,11 @@ use App\Http\Controllers\Demo\DemoController;
 use App\Http\Controllers\AdminController; 
 use App\Http\Controllers\Home\HomeSliderController;
 
+use Illuminate\Http\Request;
+use Intervention\Image\ImageManager;
+use Intervention\Image\Laravel\Facades\Image;
+
+
 
 Route::get('/', function () {
     return view('frontend.index');
