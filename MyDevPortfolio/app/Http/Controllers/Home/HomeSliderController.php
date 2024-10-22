@@ -35,7 +35,7 @@ class HomeSliderController extends Controller
             $manager = new ImageManager(new Driver());
             $img_name = hexdec(uniqid()).'.'.$request->file('home_slide')->getClientOriginalExtension();
             $img = $manager->read($request->file('home_slide'));
-            $img->resize(480,480);
+            $img->resize(636,852);
             $img->toJpeg(80)->save(base_path('public/upload/home_slide/'.$img_name));
             $save_url = 'upload/home_slide/'.$img_name;
 
