@@ -1,6 +1,6 @@
 @php
-$homeabout = App\Models\HomeSlide::find(1);
-$aboutpage = About::find(1);
+$aboutpage = App\Models\About::find(1);
+$allMultiImage = App\Models\MultiImage::all();
 @endphp
 
 <section id="aboutSection" class="about">
