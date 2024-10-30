@@ -8,11 +8,11 @@ $allMultiImage = App\Models\MultiImage::all();
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <ul class="about__icons__wrap">
-                    {{-- @foreach($allMultiImage as $item)
+                    @foreach($allMultiImage as $item)
                         <li>
                         <img class="light" src="{{ asset($item->multi_image ) }}" alt="XD"> 
                         </li>
-                    @endforeach --}}
+                    @endforeach
 
                 </ul>
             </div>

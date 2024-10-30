@@ -135,12 +135,12 @@ class AboutController extends Controller
 
         // Supprimer toutes les anciennes images
         $oldImages = MultiImage::all();
-        foreach ($oldImages as $oldImage) {
-            if (file_exists(public_path($oldImage->multi_image))) {
-                unlink(public_path($oldImage->multi_image));
-            }
-            $oldImage->delete(); // Supprimer l'entrée dans la base de données
-        }
+        // foreach ($oldImages as $oldImage) {
+        //     if (file_exists(public_path($oldImage->multi_image))) {
+        //         unlink(public_path($oldImage->multi_image));
+        //     }
+        //     $oldImage->delete(); // Supprimer l'entrée dans la base de données
+        // }
 
         // Ajouter les nouvelles images
         if ($request->hasFile('multi_image')) {
