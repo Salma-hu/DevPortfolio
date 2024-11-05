@@ -177,7 +177,8 @@ class AboutController extends Controller
      }// End Method 
 
 
-    public function EditMultiImage($id){
+    
+     public function EditMultiImage($id){
 
         $multiImage = MultiImage::findOrFail($id);
         return view('admin.about_page.edit_multi_image',compact('multiImage'));
@@ -217,7 +218,6 @@ class AboutController extends Controller
         }
 
     }// End Method 
-
 
     public function DeleteMultiImage($id){
 
