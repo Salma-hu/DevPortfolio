@@ -1,7 +1,7 @@
 @extends('frontend.main_master')
 @section('main')
 @section('title')
-    PortFolio | EasyLearning Website
+    PortFolio | Salma Belassiri Website
 @endsection
 
 <main>

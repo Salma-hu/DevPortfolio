@@ -1,7 +1,7 @@
 @extends('frontend.main_master')
 @section('main')
 @section('title')
-    Blog | EasyLearning Website
+    Blog | Salma Belassiri Website
 @endsection
 
 <main>
