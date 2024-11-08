@@ -18,17 +18,18 @@ use Intervention\Image\Laravel\Facades\Image;
 
 
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+// Route::get('/', function () {
+//     return view('frontend.index');
+// });
 
-Route::get('/dashboard', function () {
-    return view('admin.index');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('admin.index');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 
 
 Route::controller(DemoController::class)->group(function () {
+    Route::get('/', 'HomeMain')->name('home');
     Route::get('/about', 'Index')->name('about.page')->middleware('check');
     Route::get('/contact', 'ContactMethode')->name('contact.page');
 });
