@@ -91,9 +91,11 @@ Route::controller(PortfolioController::class)->group(function () {
 
 
 
+
  // Blog Category All Routes 
 
-Route::controller(BlogCategoryController::class)->group(function () {
+
+ Route::controller(BlogCategoryController::class)->group(function () {
 
     Route::get('/all/blog/category', 'AllBlogCategory')->name('all.blog.category');
     Route::get('/add/blog/category', 'AddBlogCategory')->name('add.blog.category');
@@ -104,7 +106,8 @@ Route::controller(BlogCategoryController::class)->group(function () {
 
     Route::post('/update/blog/category/{id}', 'UpdateBlogCategory')->name('update.blog.category');
 
-    Route::get('/delete/blog/category/{id}', 'DeleteBlogCategory')->name('delete.blog.category');     
+    Route::get('/delete/blog/category/{id}', 'DeleteBlogCategory')->name('delete.blog.category'); 
+        
      
 });
 
