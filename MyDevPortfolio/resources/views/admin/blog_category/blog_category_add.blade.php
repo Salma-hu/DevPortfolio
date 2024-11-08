@@ -4,7 +4,6 @@
 
     <div class="page-content">
         <div class="container-fluid">
-
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -16,33 +15,20 @@
                                 @csrf
 
                                 <div class="row mb-3">
-                                    <label for="example-text-input" class="col-sm-2 col-form-label">Blog Category
-                                        Name</label>
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">Blog Category Name</label>
                                     <div class="form-group col-sm-10">
-                                        <input name="blog_category" class="form-control" type="text"
-                                            id="example-text-input">
-
+                                        <input name="blog_category" class="form-control" type="text" id="example-text-input">
                                     </div>
                                 </div>
                                 <!-- end row -->
-
-
-                                <input type="submit" class="btn btn-info waves-effect waves-light"
-                                    value="Insert Blog Category">
+                                <input type="submit" class="btn btn-info waves-effect waves-light" value="Insert Blog Category">
                             </form>
-
-
-
                         </div>
                     </div>
                 </div> <!-- end col -->
             </div>
-
-
-
         </div>
     </div>
-
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -71,4 +57,5 @@
             });
         });
     </script>
+
 @endsection
