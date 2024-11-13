@@ -71,7 +71,7 @@
 
 
                     <div class="pagination-wrap">
-                        {{-- {{ $allblogs->links('vendor.pagination.custom') }} --}}
+                        {{ $allblogs->links('vendor.pagination.custom') }}
                     </div>
                 </div>
                 <div class="col-lg-4">
